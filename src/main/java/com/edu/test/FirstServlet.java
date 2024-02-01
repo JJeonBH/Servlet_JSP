@@ -2,8 +2,10 @@ package com.edu.test;
 
 import java.io.*;
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 
+@WebServlet("/hello2")
 public class FirstServlet extends HttpServlet {
 	
 	@Override
