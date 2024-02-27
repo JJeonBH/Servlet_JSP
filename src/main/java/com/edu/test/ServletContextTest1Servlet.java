@@ -11,7 +11,8 @@ public class ServletContextTest1Servlet extends HttpServlet {
 		resp.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = resp.getWriter();
 		ServletContext sc = this.getServletContext();
-		out.print("Context : " + sc);
+		String location = sc.getInitParameter("contextConfig");
+		out.print("location : " + location);
 		out.close();
 	}
 }
