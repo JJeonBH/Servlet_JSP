@@ -7,6 +7,16 @@
   	<param-value>/WEB-INF/context.xml</param-value>
   </context-param>
   
+  <filter>
+  	<filter-name>flow1</filter-name>
+  	<filter-class>com.edu.test.FlowFilterOne</filter-class>
+  </filter>
+  
+  <filter>
+  	<filter-name>flow2</filter-name>
+  	<filter-class>com.edu.test.FlowFilterTwo</filter-class>
+  </filter>
+  
   <!-- <servlet>
   	<servlet-name>first</servlet-name>
   	<servlet-class>com.edu.test.FirstServlet</servlet-class>
