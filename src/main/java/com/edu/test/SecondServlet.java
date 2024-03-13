@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/second")	//	서블릿 실행을 위한 URI를 "/second"로 설정
 public class SecondServlet extends HttpServlet {
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("SecondServlet!!");
 		PrintWriter out = resp.getWriter();	//	서비스를 요청한 클라이언트와 웹서버 간에 연결된 출력스트림 얻기
 		out.print("<html><head><title>Test</title></head>"); //	클라이언트에 데이터를 출력

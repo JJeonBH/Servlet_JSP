@@ -17,6 +17,16 @@
   	<filter-class>com.edu.test.FlowFilterTwo</filter-class>
   </filter>
   
+  <filter-mapping>
+  	<filter-name>flow1</filter-name>
+  	<url-pattern>/second</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>flow2</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
   <!-- <servlet>
   	<servlet-name>first</servlet-name>
   	<servlet-class>com.edu.test.FirstServlet</servlet-class>
