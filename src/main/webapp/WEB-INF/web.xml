@@ -35,12 +35,16 @@
   	<listener-class>com.edu.test.TestRequestListener</listener-class>
   </listener> -->
   
-  <listener>
+<!--   <listener>
   	<listener-class>com.edu.test.TestSessionListener</listener-class>
-  </listener>
+  </listener> -->
+  
+<!--   <listener>
+  	<listener-class>com.edu.test.TestSessionAttributeListener</listener-class>
+  </listener> -->
   
   <listener>
-  	<listener-class>com.edu.test.TestSessionAttributeListener</listener-class>
+  	<listener-class>com.edu.test.TestServletContextListener</listener-class>
   </listener>
   
 <!--   <servlet>
