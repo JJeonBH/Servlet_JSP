@@ -1,7 +1,9 @@
 package com.edu.test;
 
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebListener;
 
+@WebListener
 public class TestServletContextListener implements ServletContextListener {
 	public TestServletContextListener() {
 		System.out.println("TestServletContextListener 객체 생성");
